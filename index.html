@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy Halleran</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: #fafafa;
+            color: #1a1a1a;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 540px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.25rem;
+        }
+
+        .bio {
+            font-size: 1.05rem;
+            color: #444;
+            margin-bottom: 2rem;
+        }
+
+        .links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .links a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            padding-bottom: 1px;
+            border-bottom: 1.5px solid #ccc;
+            transition: border-color 0.2s;
+        }
+
+        .links a:hover {
+            border-color: #1a1a1a;
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.6rem; }
+            .bio { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Andy Halleran</h1>
+        <p class="bio">
+            Data scientist and investor with a background in quantitative biology.
+            I build tools that turn messy data into clear decisions — from genomics
+            pipelines to financial analytics.
+        </p>
+        <div class="links">
+            <a href="https://linkedin.com/in/andy-halleran">LinkedIn</a>
+            <a href="mailto:andyhalleran@gmail.com">Email</a>
+        </div>
+    </div>
+</body>
+</html>
