@@ -60,6 +60,27 @@
             border-color: #1a1a1a;
         }
 
+        .hover-img {
+            position: relative;
+            display: inline;
+            border-bottom: 1.5px dashed #ccc;
+        }
+
+        .hover-img img {
+            display: none;
+            position: absolute;
+            bottom: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .hover-img:hover img {
+            display: block;
+        }
+
         @media (max-width: 480px) {
             h1 { font-size: 1.6rem; }
             .bio { font-size: 1rem; }
@@ -72,7 +93,7 @@
         <p class="bio">
             Data scientist and investor with a background in synthetic biology.
             Enjoy working on hard problems with good people. Probably currently
-            thinking about private credit, AI, coffee, or my dog, Banjo.
+            thinking about private credit, AI, coffee, or my dog, <span class="hover-img">Banjo<img src="banjo.jpg" alt="Banjo the dog"></span>.
         </p>
         <p class="bio">
             Live in New Haven, CT. Work in New York, NY.
